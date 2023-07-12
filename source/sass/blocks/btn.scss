@@ -3,9 +3,14 @@
   padding: 10px 20px;
 
   color: $color-default-white;
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
 
   background-color: $color-neon-blue;
-  border: none;
+  border-width: 4px;
+  border-color: $color-default-white;
   cursor: pointer;
 
   transition: opacity $trans-default;
