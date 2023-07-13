@@ -1,0 +1,11 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__tel {
+  color: $color-default-white;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 31px;
+}
