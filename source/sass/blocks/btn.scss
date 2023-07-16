@@ -1,12 +1,14 @@
 .btn {
   display: inline-flex;
-  padding: 18px 58px;
   box-sizing: border-box;
+  justify-content: center;
 
+  user-select: none;
   font-family: $ff-roboto-condensed;
   font-weight: 700;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 13px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
 
   background-color: $color-transparent;
@@ -16,6 +18,9 @@
   transition: background-color $trans-default;
 
   &--primary {
+    width: 234px;
+    padding: 21px 30px;
+
     color: $color-default-white;
     border-width: 4px;
     border-color: $color-default-white;
@@ -24,9 +29,25 @@
       color: $color-egyptian-blue;
       background-color: $color-default-white;
     }
+
+    @include active {
+      color: $color-default-dark;
+      background-color: $color-default-white;
+    }
+
+    @include vp-1199 {
+      width: 187px;
+      padding: 20px 30px;
+    }
+
+    @include vp-767 {
+      padding: 20px 30px;
+      width: 100%;
+    }
   }
 
-  &:disabled {
+  &:disabled,
+  &--disabled {
     opacity: 0.5;
 
     pointer-events: none;

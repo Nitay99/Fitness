@@ -2,6 +2,8 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "vendor/tabs";
+@import "vendor/data-tabs";
 // Swiper 7.4.1
 // @import "vendor/swiper";
 
@@ -19,7 +21,10 @@
 // ---------------------------------
 @import "blocks/main-header";
 @import "blocks/main-container";
+@import "blocks/main-footer";
 @import "blocks/main-nav";
+@import "blocks/site-list";
+@import "blocks/social-list";
 @import "blocks/intro";
 @import "blocks/buy";
 @import "blocks/subscription-card";
@@ -29,6 +34,13 @@
 @import "blocks/slider";
 @import "blocks/features";
 @import "blocks/feature-card";
+@import "blocks/stocks";
+@import "blocks/mega-offer";
+@import "blocks/faq";
+@import "blocks/reviews";
+@import "blocks/feedback";
+@import "blocks/order";
+@import "blocks/contacts";
 @import "blocks/btn";
 @import "blocks/logo";
 

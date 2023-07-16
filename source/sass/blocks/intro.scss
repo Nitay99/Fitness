@@ -1,0 +1,145 @@
+.intro {
+  padding: 120px 0 120px 120px;
+
+  @include vp-1199 {
+    padding: 100px 0;
+  }
+
+  @include vp-767 {
+    padding: 64px 0;
+  }
+}
+
+.intro__container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1160px;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 45px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.intro__desc-wrap {
+  width: 355px;
+  margin-top: 39px;
+  margin-right: 85px;
+
+  @include vp-1199 {
+    margin-top: 0;
+    margin-right: 0;
+    text-align: center;
+    width: 502px;
+  }
+
+  @include vp-767 {
+    text-align: left;
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+.intro h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+
+  letter-spacing: 1px;
+  font-size: 48px;
+  line-height: 57px;
+
+  @include vp-1199 {
+    margin-bottom: 1px;
+
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 5px;
+
+    letter-spacing: 0.7px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.intro h3 {
+  margin-top: 0;
+  margin-bottom: 38px;
+
+  font-family: $ff-roboto-condensed;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+
+  @include vp-1199 {
+    margin-bottom: 33px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 24px;
+  }
+}
+
+.intro p {
+  margin-top: 0;
+  margin-bottom: 8px;
+
+  font-family: $ff-roboto-condensed;
+  font-weight: 300;
+
+  @include vp-1199 {
+    margin-bottom: 43px;
+  }
+
+  @include vp-767 {
+    width: 90%;
+    margin-bottom: 33px;
+  }
+}
+
+.intro p:not(:first-of-type) {
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.intro__visual {
+  @include vp-1199 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.intro__visual img {
+  @include vp-1199 {
+    width: 678px;
+  }
+}
+
+.intro__visual video {
+  position: relative;
+  right: 63px;
+  bottom: 113px;
+
+  @include vp-1199 {
+    width: 266px;
+    right: 0;
+    bottom: 84px;
+  }
+
+  @include vp-767 {
+    width: 320px;
+    bottom: 0;
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,43 @@
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 11px;
+  margin: 0;
+  padding-left: 0;
+  max-width: 100px;
+
+  list-style-type: none;
+}
+
+.social-list__link {
+  background-color: $color-default-white;
+  border-radius: 50%;
+  color: $color-black-russian;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+
+  @include hover-focus {
+    &:not(.social-list__link--disabled) {
+      background-color: $color-egyptian-blue;
+      color: $color-default-white;
+    }
+  }
+
+  @include active {
+    &:not(.social-list__link--disabled) {
+      background-color: $color-default-dark;
+      color: $color-default-white;
+    }
+  }
+
+  &--disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+
