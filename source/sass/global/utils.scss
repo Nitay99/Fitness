@@ -19,10 +19,14 @@
 
 .rouble {
   font-family: $ff-rouble;
+  color: $color-default-dark;
   /* stylelint-disable */
   text-transform: lowercase !important;
   font-weight: 400 !important;
   /* stylelint-enable */
+  position: relative;
+  z-index: 2;
+  display: inline-block;
 }
 
 .visually-hidden {

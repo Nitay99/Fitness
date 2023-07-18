@@ -1,14 +1,24 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
+import {setPlayClickHandler} from './modules/video';
+import './modules/price';
+import {initTabs} from './vendor/init-tabs';
+import {setBuyButtonHandler} from './utils/scroll-to-buy';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
+  // Vendor
+  // ---------------------------------
+
+  initTabs();
 
   // Utils
   // ---------------------------------
 
   iosVhFix();
+  setPlayClickHandler();
+  setBuyButtonHandler();
 
   // Modules
   // ---------------------------------

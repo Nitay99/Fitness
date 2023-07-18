@@ -1,0 +1,117 @@
+.video {
+  position: relative;
+  box-sizing: border-box;
+  width: 364px;
+  height: 228px;
+
+  @include vp-1199 {
+    width: 266px;
+    height: 167px;
+  }
+
+  @include vp-767 {
+    width: 320px;
+  }
+}
+
+.video__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #14367A80;
+}
+
+.video__button {
+  position: absolute;
+  z-index: 2;
+  top: 64px;
+  left: 132px;
+  width: 100px;
+  height: 100px;
+
+  cursor: pointer;
+  background-color: $color-transparent;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $color-torch-red;
+  color: $color-default-white;
+
+  @include hover-focus {
+    &:not(:disabled) {
+      border-color: $color-default-dark;
+      color: $color-default-dark;
+
+      &::before {
+        background: $color-default-white;
+      }
+    }
+  }
+
+  @include active {
+    &:not(:disabled) {
+      &::before {
+        width: 58px;
+        height: 58px;
+        top: 20px;
+        left: 20px;
+      }
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+    border-color: $color-default-dark;
+    color: $color-default-dark;
+
+    &::before {
+      background: $color-default-white;
+    }
+  }
+
+  @include vp-1199 {
+    top: 47px;
+    left: 96px;
+    width: 73px;
+    height: 73px;
+  }
+
+  @include vp-767 {
+    left: 125px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    width: 72px;
+    height: 72px;
+    top: 13px;
+    left: 13px;
+
+    border-radius: 50%;
+    background: $color-gradient-play-button;
+
+    @include vp-1199 {
+      top: 9px;
+      left: 9px;
+      width: 52px;
+      height: 52px;
+    }
+  }
+}
+
+.video__button svg {
+  position: absolute;
+  top: 41px;
+  left: 44px;
+  z-index: 3;
+
+  @include vp-1199 {
+    width: 12px;
+    height: 12px;
+    top: 28px;
+    left: 31px;
+  }
+}

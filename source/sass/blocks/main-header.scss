@@ -1,5 +1,5 @@
 .main-header {
-  background: conic-gradient($color-gradient-primary);
+  background: $color-gradient-primary;
   color: $color-default-white;
 
   padding: 30px 0 41px;
@@ -13,7 +13,7 @@
   }
 }
 
-.main-header .main-nav {
+.main-header__nav {
   @include vp-1199 {
     margin-bottom: 24px;
   }
@@ -161,7 +161,7 @@
   }
 }
 
-.main-header__container .btn {
+.main-header__btn {
   margin-left: auto;
 }
 

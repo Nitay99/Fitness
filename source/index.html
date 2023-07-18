@@ -19,7 +19,7 @@
     <div class="wrapper">
       <header class="main-header">
         <div class="container">
-          <nav class="main-nav">
+          <nav class="main-header__nav main-nav">
             <a href="index.html" class="logo">
               <img src="img/svg/logo.svg" alt="Логотип Supergym." width="120" height="23">
             </a>
@@ -34,7 +34,7 @@
                   <h1 class="main-header__title">Фитнес центр</h1>
                 </div>
               </div>
-              <a href="#" class="btn btn--primary">Купить абонемент</a>
+              <a href="#" class="main-header__btn btn btn--primary">Купить абонемент</a>
             </div>
             <picture>
               <source type="image/webp" media="(max-width: 1199px)" srcset="img/jpg/main-photo-tablet.webp 1x, img/jpg/main-photo-tablet@2x.webp 2x">
@@ -60,84 +60,126 @@
               </p>
             </div>
             <div class="intro__visual">
-              <picture>
-                <source type="image/webp" media="(max-width: 767px)" srcset="img/jpg/gym-mobile.webp 1x, img/jpg/gym-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1199px)" srcset="img/jpg/gym-tablet.webp 1x, img/jpg/gym-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/jpg/gym.webp 1x, img/jpg/gym@2x.webp 2x">
+              <div class="intro__img">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/jpg/gym-mobile.webp 1x, img/jpg/gym-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/jpg/gym-tablet.webp 1x, img/jpg/gym-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/jpg/gym.webp 1x, img/jpg/gym@2x.webp 2x">
 
-                <source media="(max-width: 767px)" srcset="img/jpg/gym-mobile.jpg 1x, img/jpg/gym-mobile@2x.jpg 2x">
-                <source media="(max-width: 1199px)" srcset="img/jpg/gym-tablet.jpg 1x, img/jpg/gym-tablet@2x.jpg 2x">
-                <img src="img/jpg/gym.jpg" alt="Тренажерный зал." width="660" height="401">
-              </picture>
+                  <source media="(max-width: 767px)" srcset="img/jpg/gym-mobile.jpg 1x, img/jpg/gym-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1199px)" srcset="img/jpg/gym-tablet.jpg 1x, img/jpg/gym-tablet@2x.jpg 2x">
+                  <img src="img/jpg/gym.jpg" alt="Тренажерный зал." width="660" height="401" srcset="img/jpg/gym@2x.jpg">
+                </picture>
+              </div>
 
-              <video poster="img/jpg/gym-2.jpg" width="364" height="228">
-              </video>
+              <div class="intro__video video">
+                <div class="video__overlay"></div>
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/jpg/gym-2-mobile.webp 1x, img/jpg/gym-2-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/jpg/gym-2-tablet.webp 1x, img/jpg/gym-2-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/jpg/gym-2.webp 1x, img/jpg/gym-2@2x.webp 2x">
+
+                  <source media="(max-width: 767px)" srcset="img/jpg/gym-2-mobile.jpg 1x, img/jpg/gym-2-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1199px)" srcset="img/jpg/gym-2-tablet.jpg 1x, img/jpg/gym-2-tablet@2x.jpg 2x">
+                  <img src="img/jpg/gym-2.jpg" alt="Обложка видео с тренажёрным залом." width="364" height="228" srcset="img/jpg/gym-2@2x.jpg">
+                </picture>
+                <button type="button" class="video__button">
+                  <svg width="13" height="15" role="img" aria-hidden="true" focusable="false" fill="currentcolor">
+                    <use xlink:href="img/sprite.svg#triangle"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </section>
         <section class="buy">
           <div class="container">
-            <div class="buy__container">
-              <h2 class="buy__title">Абонементы</h2>
-
-              <div class="tabs" data-tabs="parent" data-delay="300" data-height="max">
-                <div class="tabs__controls" data-tabs="controls">
-                  <button class="tabs__control btn" type="button" data-tabs="control" data-index="0">Таб 1</button>
-                  <button class="tabs__control btn" type="button" data-tabs="control" data-index="1">Таб 2</button>
-                  <button class="tabs__control btn is-active" type="button" data-tabs="control" data-index="2">Таб 3</button>
-                  <button class="tabs__control btn" type="button" data-tabs="control" data-index="3">Таб 4</button>
-                </div>
-                <div class="tabs__content" data-tabs="content" style="height: 374px;">
-                  <div class="tabs__element" data-tabs="element">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-                  </div>
-                  <div class="tabs__element" data-tabs="element">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
-                  </div>
+            <h2 class="buy__title">Абонементы</h2>
+            <div class="tabs" data-tabs="parent" data-delay="0">
+              <div class="buy__controls tabs__controls" data-tabs="controls">
+                <button class="tabs__control buy__button is-active" type="button" data-tabs="control" data-index="0">1 месяц</button>
+                <button class="tabs__control buy__button" type="button" data-tabs="control" data-index="1">6 месяцев</button>
+                <button class="tabs__control buy__button" type="button" data-tabs="control" data-index="2">12 месяцев</button>
+              </div>
+              <div class="tabs__content" data-tabs="content">
+                <div class="buy__container">
                   <div class="tabs__element is-active" data-tabs="element">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
+                    <div class="buy__cards">
+                      <a href="#" class="subscription-card">
+                        <h3 class="subscription-card__title">С тренером</h3>
+                        <p class="subscription-card__time">12 занятий</p>
+                        <p class="subscription-card__price-wrap"><span class="subscription-card__price">5000</span> <span class="rouble">a</span></p>
+                        <button type="button" href="#" class="subscription-card__btn btn btn--secondary">Купить абонемент</button>
+                      </a>
+                      <a href="#" class="subscription-card">
+                        <h3 class="subscription-card__title">Дневной</h3>
+                        <p class="subscription-card__time">с 8:00 до 17:00</p>
+                        <p class="subscription-card__price-wrap"><span class="subscription-card__price">1700</span> <span class="rouble">a</span></p>
+                        <button type="button" href="#" class="subscription-card__btn btn btn--secondary">Купить абонемент</button>
+                      </a>
+                      <a href="#" class="subscription-card">
+                        <h3 class="subscription-card__title">Полный день</h3>
+                        <p class="subscription-card__time">с 8:00 до 22:00</p>
+                        <p class="subscription-card__price-wrap"><span class="subscription-card__price">2700</span> <span class="rouble">a</span></p>
+                        <button type="button" href="#" class="subscription-card__btn btn btn--secondary">Купить абонемент</button>
+                      </a>
+                    </div>
                   </div>
+
                   <div class="tabs__element" data-tabs="element">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, perspiciatis! Ab pariatur dolor alias debitis molestiae reprehenderit tempora ducimus, atque amet inventore illum ullam laboriosam totam vel error dicta et.</p>
+                    <div class="buy__cards">
+                      <div class="subscription-card">
+                        <h3 class="subscription-card__title">С тренером</h3>
+                        <p class="subscription-card__time">12 занятий</p>
+                        <p class="subscription-card__price-wrap"><span class="subscription-card__price">12000</span> <span class="rouble">a</span></p>
+                        <a href="#" class="subscription-card__btn btn btn--secondary">Купить абонемент</a>
+                      </div>
+                      <div class="subscription-card">
+                        <h3 class="subscription-card__title">Дневной</h3>
+                        <p class="subscription-card__time">с 8:00 до 17:00</p>
+                        <p class="subscription-card__price-wrap"><span class="subscription-card__price">5000</span> <span class="rouble">a</span></p>
+                        <a href="#" class="subscription-card__btn btn btn--secondary">Купить абонемент</a>
+                      </div>
+                      <div class="subscription-card">
+                        <h3 class="subscription-card__title">Полный день</h3>
+                        <p class="subscription-card__time">с 8:00 до 22:00</p>
+                        <p class="subscription-card__price-wrap"><span class="subscription-card__price">7000</span> <span class="rouble">a</span></p>
+                        <a href="#" class="subscription-card__btn btn btn--secondary">Купить абонемент</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tabs__element" data-tabs="element">
+                    <div class="buy__cards">
+                      <div class="subscription-card">
+                        <h3 class="subscription-card__title">С тренером</h3>
+                        <p class="subscription-card__time">12 занятий</p>
+                        <p class="subscription-card__price-wrap"><span class="subscription-card__price">20000</span> <span class="rouble">a</span></p>
+                        <a href="#" class="subscription-card__btn btn btn--secondary">Купить абонемент</a>
+                      </div>
+                      <div class="subscription-card">
+                        <h3 class="subscription-card__title">Дневной</h3>
+                        <p class="subscription-card__time">с 8:00 до 17:00</p>
+                        <p class="subscription-card__price-wrap"><span class="subscription-card__price">10000</span> <span class="rouble">a</span></p>
+                        <a href="#" class="subscription-card__btn btn btn--secondary">Купить абонемент</a>
+                      </div>
+                      <div class="subscription-card">
+                        <h3 class="subscription-card__title">Полный день</h3>
+                        <p class="subscription-card__time">с 8:00 до 22:00</p>
+                        <p class="subscription-card__price-wrap"><span class="subscription-card__price">15000</span> <span class="rouble">a</span></p>
+                        <a href="#" class="subscription-card__btn btn btn--secondary">Купить абонемент</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-
-
-              <!-- <div class="tabs" data-tabs="parent" data-delay="300">
-                <div class="tabs__controls" data-tabs="controls">
-                  <button class="tabs__control btn" type="button" data-tabs="control" data-index="0">1 месяц</button>
-                  <button class="tabs__control btn" type="button" data-tabs="control" data-index="1">6 месяцев</button>
-                  <button class="tabs__control btn is-active" type="button" data-tabs="control" data-index="2">12 месяцев</button>
-                </div>
-                <div class="tabs__content" data-tabs="content">
-                  <div class="tabs__element is-active" data-tabs="element">
-                    <div class="subscription-card">
-                      <h3 class="subscription-card__title">С тренером</h3>
-                      <p class="subscription-card__time">12 занятий</p>
-                      <p class="subscription-card__price">5000 <span class="rouble">a</span></p>
-                      <a href="#" class="btn">Купить абонемент</a>
-                    </div>
-                  </div>
-                  <div class="tabs__element" data-tabs="element">
-                    <div class="subscription-card">
-                      <h3 class="subscription-card__title">Дневной</h3>
-                      <p class="subscription-card__time">с 8:00 до 17:00</p>
-                      <p class="subscription-card__price">1700 <span class="rouble">a</span></p>
-                      <a href="#" class="btn">Купить абонемент</a>
-                    </div>
-                  </div>
-                  <div class="tabs__element" data-tabs="element">
-                    <div class="subscription-card">
-                      <h3 class="subscription-card__title">Полный день</h3>
-                      <p class="subscription-card__time">с 8:00 до 22:00</p>
-                      <p class="subscription-card__price">2700 <span class="rouble">a</span></p>
-                      <a href="#" class="btn">Купить абонемент</a>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
             </div>
+          </div>
+          <div class="buy__bg-img">
+            <picture>
+              <source media="(max-width: 1199px)" srcset="img/png/pancakes-tablet.png 1x, img/png/pancakes-tablet@2x.png 2x">
+              <img src="img/png/pancakes.png" alt="Блины для силовых тренировок." width="287" height="494" srcset="img/png/pancakes@2x.png">
+            </picture>
           </div>
         </section>
         <section class="games">
@@ -255,7 +297,7 @@
         <section class="faq">
           <div class="container">
             <h2 class="faq__title">Вопросы и ответы</h2>
-            <div class="tabs" data-tabs="parent" data-delay="300">
+            <!-- <div class="tabs" data-tabs="parent" data-delay="300">
               <button class="tabs__control" type="button" data-tabs="control" data-index="0">Центр</button>
               <button class="tabs__control" type="button" data-tabs="control" data-index="1">Абонемент</button>
               <button class="tabs__control is-active" type="button" data-tabs="control" data-index="2">Услуги</button>
@@ -309,7 +351,7 @@
               <div class="tabs__element" data-tabs="element">
 
               </div>
-            </div>
+            </div> -->
           </div>
         </section>
         <section class="reviews">
@@ -382,10 +424,10 @@
       <footer class="main-footer">
         <div class="container">
           <nav class="main-nav main-nav--footer">
-            <a href="index.html" class="logo logo--footer">
+            <a href="index.html" class="main-footer__logo logo">
               <img src="img/svg/logo.svg" alt="Логотип Supergym." width="88" height="32">
             </a>
-            <ul class="site-list">
+            <ul class="main-footer__list site-list">
               <li class="site-list__item site-list__item--logo">
                 <span class="visually-hidden">Расположение логотипа.</span>
               </li>
@@ -396,7 +438,7 @@
                 <a href="#" class="site-list__link">Абонементы</a>
               </li>
             </ul>
-            <ul class="site-list">
+            <ul class="main-footer__list site-list">
               <li class="site-list__item">
                 <a href="#" class="site-list__link">Акции</a>
               </li>
@@ -407,7 +449,7 @@
                 <a href="#" class="site-list__link">Расписание</a>
               </li>
             </ul>
-            <ul class="social-list">
+            <ul class="main-footer__social social-list">
               <li class="social-list__item">
                 <a href="#" class="social-list__link" aria-label="Вконтакте.">
                   <svg width="13" height="8" role="img" aria-hidden="true" focusable="false" fill="currentcolor">

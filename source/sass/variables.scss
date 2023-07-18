@@ -10,10 +10,17 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$color-gradient-primary:              from 150.87deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg;
+$color-gradient-primary:            conic-gradient(from 150.87deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+$color-gradient-additional:         linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+$color-gradient-button:             linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+$color-gradient-play-button:        linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
 $color-egyptian-blue:               #103aae;
 $color-black-russian:               #030a1a;
 $color-ghost-white:                 #F8F9FC;
+$color-torch-red:                   #ed0233;
+$color-crimson:                     #d10a42;
+$color-crete:                       #78787833;
+$color-whisper:                     #e8e8e8;
 
 // Gradient
 

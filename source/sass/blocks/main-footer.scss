@@ -12,8 +12,9 @@
   }
 }
 
-.main-footer .social-list {
+.main-footer__social {
   margin-left: auto;
+  margin-top: 0;
 
   @include vp-767 {
     margin-left: 0;
@@ -21,10 +22,20 @@
   }
 }
 
-.main-footer .site-list {
+.main-footer__list {
   margin-right: 20px;
 
   @include vp-1199 {
     margin-right: 10px;
+  }
+}
+
+.main-footer__logo {
+  margin-right: auto;
+
+  @include vp-767 {
+    position: absolute;
+    top: 3px;
+    left: 0;
   }
 }

@@ -46,6 +46,29 @@
     }
   }
 
+  &--secondary {
+    width: 206px;
+    padding: 24px 40px;
+
+    color: $color-default-dark;
+    border: 2px solid $color-default-dark;
+
+    @include hover-focus {
+      color: $color-default-white;
+      background: $color-gradient-button;
+      border-image-source: $color-gradient-button;
+      border-image-slice: 1;
+      outline: none;
+    }
+
+    @include active {
+      color: transparentize($color-default-white, 0.5);
+      background: $color-gradient-button;
+      border-image-source: $color-gradient-button;
+      border-image-slice: 1;
+    }
+  }
+
   &:disabled,
   &--disabled {
     opacity: 0.5;
