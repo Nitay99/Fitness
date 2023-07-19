@@ -186,22 +186,32 @@
           <div class="container">
             <div class="games__container">
               <div class="games__col">
-                <h2 class="games__title">Super games</h2>
-                <div class="games__date">
-                  <div class="date">
-                    <p class="date__text">Дата</p>
-                    <time datetime="2019-03-07">7 Марта 2019</time>
-                  </div>
-                  <div class="date">
-                    <p class="date__text">Время</p>
-                    <time datetime="2019-03-07T12:00">12:00</time>
+                <div class="games__heading">
+                  <h2 class="games__title">Super games</h2>
+                  <div class="games__date-wrap">
+                    <div class="games__date date">
+                      <p class="date__text">Дата</p>
+                      <time datetime="2019-03-07" class="date__time">7 <span class="date__date">Марта 2019</span></time>
+                    </div>
+                    <div class="games__date date">
+                      <p class="date__text">Время</p>
+                      <time datetime="2019-03-07T12:00" class="date__time">12:00</time>
+                    </div>
                   </div>
                 </div>
-                <p class="games__text">Ежегодные соревнования по CrossFit</p>
-                <a href="#" class="btn">Заполнить заявку</a>
+                <p class="games__desc">Ежегодные соревнования по CrossFit</p>
+                <a href="#" class="btn btn--primary btn--big">Заполнить заявку</a>
               </div>
-              <div class="games__img-wrapper">
-                <img src="img/jpg/man-and-sand.jpg" alt="Занимающий спортом мужчина на песке." width="660" height="500">
+              <div class="games__img-wrap">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/jpg/man-and-sand-mobile.webp 1x, img/jpg/man-and-sand-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1199px)" srcset="img/jpg/man-and-sand-tablet.webp 1x, img/jpg/man-and-sand-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/jpg/man-and-sand.webp 1x, img/jpg/man-and-sand@2x.webp 2x">
+
+                  <source media="(max-width: 767px)" srcset="img/jpg/man-and-sand-mobile.jpg 1x, img/jpg/man-and-sand-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1199px)" srcset="img/jpg/man-and-sand-tablet.jpg 1x, img/jpg/man-and-sand-tablet@2x.jpg 2x">
+                  <img src="img/jpg/man-and-sand.jpg" alt="Занимающий спортом мужчина на песке." width="660" height="500" srcset="img/jpg/man-and-sand@2x.jpg">
+                </picture>
               </div>
             </div>
           </div>

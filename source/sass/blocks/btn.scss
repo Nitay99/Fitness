@@ -46,6 +46,19 @@
     }
   }
 
+  &--big {
+    width: 100%;
+    padding: 25px 30px;
+
+    @include vp-1199 {
+      padding: 13px 30px;
+
+      border-width: 2px;
+      font-size: 10px;
+      line-height: 11px;
+    }
+  }
+
   &--secondary {
     width: 206px;
     padding: 24px 40px;
