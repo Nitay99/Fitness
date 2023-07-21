@@ -4,7 +4,7 @@
 @import "vendor/normalize";
 @import "vendor/data-tabs";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -31,7 +31,8 @@
 @import "blocks/games";
 @import "blocks/date";
 @import "blocks/coaches";
-@import "blocks/slider";
+@import "blocks/coach";
+@import "blocks/achievements-list";
 @import "blocks/features";
 @import "blocks/feature-card";
 @import "blocks/stocks";

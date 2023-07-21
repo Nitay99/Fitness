@@ -6,14 +6,14 @@
 
 @mixin hover {
   @media (hover: hover) {
-    &:hover:not(:focus) {
+    &:hover:not(.focus-visible) {
       @content;
     }
   }
 }
 
 @mixin focus {
-  &:focus {
+  &.focus-visible:focus {
     @content;
   }
 }
@@ -31,7 +31,7 @@
     }
   }
 
-  &:focus {
+  &.focus-visible:focus {
     @content;
   }
 }

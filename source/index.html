@@ -20,7 +20,7 @@
       <header class="main-header">
         <div class="container">
           <nav class="main-header__nav main-nav">
-            <a href="index.html" class="logo">
+            <a href="index.html" class="logo main-nav__logo">
               <img src="img/svg/logo.svg" alt="Логотип Supergym." width="120" height="23">
             </a>
             <a href="tel:88005555555" class="main-nav__tel">8-800-555-55-55</a>
@@ -96,7 +96,7 @@
           <div class="container">
             <h2 class="buy__title">Абонементы</h2>
             <div class="tabs" data-tabs="parent" data-delay="0">
-              <div class="buy__controls tabs__controls" data-tabs="controls">
+              <div class="buy__controls " data-tabs="controls">
                 <button class="tabs__control buy__button is-active" type="button" data-tabs="control" data-index="0">1 месяц</button>
                 <button class="tabs__control buy__button" type="button" data-tabs="control" data-index="1">6 месяцев</button>
                 <button class="tabs__control buy__button" type="button" data-tabs="control" data-index="2">12 месяцев</button>
@@ -219,63 +219,246 @@
         <section class="coaches">
           <div class="coaches__container">
             <h2 class="coaches__title">Тренеры</h2>
-            <div class="slider"></div>
+            <div class="coaches__slider">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <ul class="coaches__list">
+                      <li class="coaches__item">
+                        <div class="coach">
+                          <div class="coach__info">
+                            <h3 class="coach__title">Анна Павлова</h3>
+                            <div class="coach__achievements">
+                              <h4 class="coach__subtitle">CrossFit</h4>
+                              <ul class="achievements-list">
+                                <li class="achievements-list__item">Certified Level 3 Trainer</li>
+                                <li class="achievements-list__item">Победитель чемпионата России по CrossFit</li>
+                                <li class="achievements-list__item">Опыт — 6 лет</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <picture>
+                            <source type="image/webp" srcset="img/jpg/trainer-anna.webp 1x, img/jpg/trainer-anna@2x.webp 2x">
+                            <img src="img/jpg/trainer-anna.jpg" alt="Фото тренера Анны." srcset="img/jpg/trainer-anna@2x.jpg">
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="coaches__item">
+                        <div class="coach">
+                          <a href="#" class="coach__info">
+                            <h3 class="coach__title">Алексей Лавров</h3>
+                            <div class="coach__achievements">
+                              <h4 class="coach__subtitle">CrossFit</h4>
+                              <ul class="achievements-list">
+                                <li class="achievements-list__item">Certified Level 3 Trainer</li>
+                                <li class="achievements-list__item">Победитель чемпионата России по CrossFit</li>
+                                <li class="achievements-list__item">Опыт — 6 лет</li>
+                              </ul>
+                            </div>
+                          </a>
+                          <picture>
+                            <source type="image/webp" srcset="img/jpg/trainer-alexei.webp 1x, img/jpg/trainer-alexei@2x.webp 2x">
+                            <img src="img/jpg/trainer-alexei.jpg" alt="Фото тренера Алексея." srcset="img/jpg/trainer-alexei@2x.jpg">
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="coaches__item">
+                        <div class="coach">
+                          <div class="coach__info">
+                            <h3 class="coach__title">Александр Пашков</h3>
+                            <div class="coach__achievements">
+                              <h4 class="coach__subtitle">CrossFit</h4>
+                              <ul class="achievements-list">
+                                <li class="achievements-list__item">Certified Level 3 Trainer</li>
+                                <li class="achievements-list__item">Победитель чемпионата России по CrossFit</li>
+                                <li class="achievements-list__item">Опыт — 6 лет</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <picture>
+                            <source type="image/webp" srcset="img/jpg/trainer-alex.webp 1x, img/jpg/trainer-alex@2x.webp 2x">
+                            <img src="img/jpg/trainer-alex.jpg" alt="Фото тренера Александра." srcset="img/jpg/trainer-alex@2x.jpg">
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="coaches__item">
+                        <div class="coach">
+                          <a href="#" class="coach__info">
+                            <h3 class="coach__title">Мария Кетова</h3>
+                            <div class="coach__achievements">
+                              <h4 class="coach__subtitle">CrossFit</h4>
+                              <ul class="achievements-list">
+                                <li class="achievements-list__item">Certified Level 3 Trainer</li>
+                                <li class="achievements-list__item">Победитель чемпионата России по CrossFit</li>
+                                <li class="achievements-list__item">Опыт — 6 лет</li>
+                              </ul>
+                            </div>
+                          </a>
+                          <picture>
+                            <source type="image/webp" srcset="img/jpg/trainer-maria.webp 1x, img/jpg/trainer-maria@2x.webp 2x">
+                            <img src="img/jpg/trainer-maria.jpg" alt="Фото тренера Марии." srcset="img/jpg/trainer-maria@2x.jpg">
+                          </picture>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="swiper-slide">
+                    <ul class="coaches__list">
+                      <li class="coaches__item">
+                        <div class="coach">
+                          <div class="coach__info">
+                            <h3 class="coach__title">Анна Павлова</h3>
+                            <div class="coach__achievements">
+                              <h4 class="coach__subtitle">CrossFit</h4>
+                              <ul class="achievements-list">
+                                <li class="achievements-list__item">Certified Level 3 Trainer</li>
+                                <li class="achievements-list__item">Победитель чемпионата России по CrossFit</li>
+                                <li class="achievements-list__item">Опыт — 6 лет</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <picture>
+                            <source type="image/webp" srcset="img/jpg/trainer-anna.webp 1x, img/jpg/trainer-anna@2x.webp 2x">
+                            <img src="img/jpg/trainer-anna.jpg" alt="Фото тренера Анны." srcset="img/jpg/trainer-anna@2x.jpg">
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="coaches__item">
+                        <div class="coach">
+                          <a href="#" class="coach__info">
+                            <h3 class="coach__title">Алексей Лавров</h3>
+                            <div class="coach__achievements">
+                              <h4 class="coach__subtitle">CrossFit</h4>
+                              <ul class="achievements-list">
+                                <li class="achievements-list__item">Certified Level 3 Trainer</li>
+                                <li class="achievements-list__item">Победитель чемпионата России по CrossFit</li>
+                                <li class="achievements-list__item">Опыт — 6 лет</li>
+                              </ul>
+                            </div>
+                          </a>
+                          <picture>
+                            <source type="image/webp" srcset="img/jpg/trainer-alexei.webp 1x, img/jpg/trainer-alexei@2x.webp 2x">
+                            <img src="img/jpg/trainer-alexei.jpg" alt="Фото тренера Алексея." srcset="img/jpg/trainer-alexei@2x.jpg">
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="coaches__item">
+                        <div class="coach">
+                          <a href="#" class="coach__info">
+                            <h3 class="coach__title">Александр Пашков</h3>
+                            <div class="coach__achievements">
+                              <h4 class="coach__subtitle">CrossFit</h4>
+                              <ul class="achievements-list">
+                                <li class="achievements-list__item">Certified Level 3 Trainer</li>
+                                <li class="achievements-list__item">Победитель чемпионата России по CrossFit</li>
+                                <li class="achievements-list__item">Опыт — 6 лет</li>
+                              </ul>
+                            </div>
+                          </a>
+                          <picture>
+                            <source type="image/webp" srcset="img/jpg/trainer-alex.webp 1x, img/jpg/trainer-alex@2x.webp 2x">
+                            <img src="img/jpg/trainer-alex.jpg" alt="Фото тренера Александра." srcset="img/jpg/trainer-alex@2x.jpg">
+                          </picture>
+                        </div>
+                      </li>
+                      <li class="coaches__item">
+                        <div class="coach">
+                          <a href="#" class="coach__info">
+                            <h3 class="coach__title">Мария Кетова</h3>
+                            <div class="coach__achievements">
+                              <h4 class="coach__subtitle">CrossFit</h4>
+                              <ul class="achievements-list">
+                                <li class="achievements-list__item">Certified Level 3 Trainer</li>
+                                <li class="achievements-list__item">Победитель чемпионата России по CrossFit</li>
+                                <li class="achievements-list__item">Опыт — 6 лет</li>
+                              </ul>
+                            </div>
+                          </a>
+                          <picture>
+                            <source type="image/webp" srcset="img/jpg/trainer-anna.webp 1x, img/jpg/trainer-anna@2x.webp 2x">
+                            <img src="img/jpg/trainer-anna.jpg" alt="Фото тренера Анны." srcset="img/jpg/trainer-anna@2x.jpg">
+                          </picture>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-button-prev coaches__slider-button-prev">
+                  <span class="visually-hidden">Кнопка назад.</span>
+                  <svg width="16" height="32" role="img" aria-hidden="true" focusable="false" fill="currentcolor">
+                    <use xlink:href="img/sprite.svg#arrow-left"></use>
+                  </svg>
+                </div>
+                <div class="swiper-button-next coaches__slider-button-next">
+                  <span class="visually-hidden">Кнопка вперед.</span>
+                  <svg width="16" height="32" role="img" aria-hidden="true" focusable="false" fill="currentcolor">
+                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <section class="features">
-          <div class="container">
-            <h2 class="features__title">Наши преимущества</h2>
-            <div class="features__container">
-              <ul class="features__list">
-                <li class="features__item">
-                  <div class="feature-card">
-                    <div class="feature-card__col">
-                      <span class="feature-card__quantity">900</span>
-                      <span class="feature-card__quantity-text">кв/м</span>
-                    </div>
-                    <h3 class="feature-card__title">Площадь</h3>
-                    <p class="feature-card__text">Занимайтесь без очередей и толпучки</p>
+          <h2 class="features__title">Наши преимущества</h2>
+          <div class="features__container">
+            <ul class="features__list">
+              <li class="features__item">
+                <div class="feature-card">
+                  <div class="feature-card__col">
+                    <b class="feature-card__quantity">900</b>
+                    <span class="feature-card__quantity-text">кв/м</span>
                   </div>
-                </li>
-                <li class="features__item">
-                  <div class="feature-card">
-                    <div class="feature-card__col">
-                      <span class="feature-card__quantity">70</span>
-                      <span class="feature-card__quantity-text">машин</span>
-                    </div>
+                  <div class="feature-card__col">
+                    <h3 class="feature-card__title">Площадь</h3>
+                    <p class="feature-card__text">Занимайтесь без очередей и&nbsp;толпучки</p>
+                  </div>
+                </div>
+              </li>
+              <li class="features__item">
+                <div class="feature-card">
+                  <div class="feature-card__col">
+                    <b class="feature-card__quantity">70</b>
+                    <span class="feature-card__quantity-text">машин</span>
+                  </div>
+                  <div class="feature-card__col">
                     <h3 class="feature-card__title">Собственная парковка</h3>
                     <p class="feature-card__text">Вы всегда найдете место для своей машины на нашей парковке</p>
                   </div>
-                </li>
-              </ul>
-              <div class="features__main-card">
-                <span class="features__quantity">100</span>
-                <span class="features__quantity-text">Тренажеров</span>
-                <p class="features__text">Современные тренажеры на все группы мышц</p>
-              </div>
-              <ul class="features__list">
-                <li class="features__item">
-                  <div class="feature-card">
-                    <div class="feature-card__col">
-                      <span class="feature-card__quantity">350</span>
-                      <span class="feature-card__quantity-text">мест</span>
-                    </div>
+                </div>
+              </li>
+            </ul>
+            <div class="features__main-card">
+              <b class="features__quantity">100</b>
+              <span class="features__quantity-text">Тренажеров</span>
+              <p class="features__text">Современные тренажеры на все группы мышц</p>
+            </div>
+            <ul class="features__list">
+              <li class="features__item">
+                <div class="feature-card">
+                  <div class="feature-card__col">
+                    <b class="feature-card__quantity">350</b>
+                    <span class="feature-card__quantity-text">мест</span>
+                  </div>
+                  <div class="feature-card__col">
                     <h3 class="feature-card__title">Комфорт</h3>
                     <p class="feature-card__text">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
                   </div>
-                </li>
-                <li class="features__item">
-                  <div class="feature-card">
-                    <div class="feature-card__col">
-                      <span class="feature-card__quantity">5+</span>
-                      <span class="feature-card__quantity-text">лет</span>
-                    </div>
+                </div>
+              </li>
+              <li class="features__item">
+                <div class="feature-card">
+                  <div class="feature-card__col">
+                    <b class="feature-card__quantity">5+</b>
+                    <span class="feature-card__quantity-text">лет</span>
+                  </div>
+                  <div class="feature-card__col">
                     <h3 class="feature-card__title">Тренерский опыт</h3>
                     <p class="feature-card__text">Добивайтесь своих целей быстрее с профессиональным тренером</p>
                   </div>
-                </li>
-              </ul>
-            </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
         <section class="stocks">

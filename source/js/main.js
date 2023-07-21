@@ -3,6 +3,7 @@ import {Form} from './modules/form-validate/form';
 import {setPlayClickHandler} from './modules/video';
 import './modules/price';
 import {initTabs} from './vendor/init-tabs';
+import Swiper, {Navigation} from './vendor/swiper';
 import {setBuyButtonHandler} from './utils/scroll-to-buy';
 
 // ---------------------------------
@@ -10,7 +11,18 @@ import {setBuyButtonHandler} from './utils/scroll-to-buy';
 window.addEventListener('DOMContentLoaded', () => {
   // Vendor
   // ---------------------------------
+  Swiper.use([Navigation]);
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
 
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
   initTabs();
 
   // Utils

@@ -1,0 +1,25 @@
+.achievements-list {
+  list-style-type: none;
+
+  padding-left: 50px;
+}
+
+.achievements-list__item {
+  font-size: 14px;
+  line-height: 21px;
+
+  position: relative;
+  margin-bottom: 14px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 7px;
+    left: -15px;
+
+    border-radius: 50%;
+    background-color: $color-default-white;
+  }
+}
