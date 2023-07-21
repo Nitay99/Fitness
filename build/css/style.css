@@ -2720,24 +2720,15 @@ button,
 .coaches {
   padding-top: 51px;
   padding-bottom: 106px;
+  position: relative;
 }
 
 .coaches__container {
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
+  position: relative;
 }
-@media (max-width: 1199px) {
-  .coaches__container {
-    padding: 0 45px;
-  }
-}
-@media (max-width: 767px) {
-  .coaches__container {
-    padding: 0 15px;
-  }
-}
-
 .coaches__title {
   margin-top: 0;
   margin-bottom: 48px;
@@ -2752,6 +2743,7 @@ button,
   width: 56px;
   height: 56px;
   top: 142px;
+  z-index: 10;
   color: #102654;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0);
@@ -2778,11 +2770,11 @@ button,
 }
 
 .coaches__slider-button-prev {
-  left: 30px;
+  left: 0;
 }
 
 .coaches__slider-button-next {
-  right: 30px;
+  right: 0;
 }
 
 .coaches__slider-button-prev svg {
@@ -2880,6 +2872,18 @@ button,
   line-height: 16px;
   font-weight: 400;
   color: #b6bdcc;
+}
+
+.slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider__wrapper {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .achievements-list {
@@ -3216,6 +3220,10 @@ button,
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
+}
+
+.reviews {
+  position: relative;
 }
 
 .btn {
