@@ -1478,7 +1478,7 @@ button,
 }
 
 .main-header {
-  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   color: #ffffff;
   padding: 30px 0 41px;
 }
@@ -2262,7 +2262,7 @@ button,
   top: 13px;
   left: 13px;
   border-radius: 50%;
-  background: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
+  background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
 }
 @media (max-width: 1199px) {
   .video__button::before {
@@ -2490,26 +2490,26 @@ button,
 }
 @media (hover: hover) {
   .subscription-card:hover {
-    border-image-source: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+    border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
     border-image-slice: 1;
     outline: none;
   }
   .subscription-card:hover .subscription-card__btn {
     color: #ffffff;
-    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-    border-image-source: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    border-image-source: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     border-image-slice: 1;
   }
 }
 .subscription-card:focus {
-  border-image-source: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  border-image-source: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 1;
   outline: none;
 }
 .subscription-card:focus .subscription-card__btn {
   color: #ffffff;
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-  border-image-source: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  border-image-source: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   border-image-slice: 1;
 }
 @media (max-width: 1199px) {
@@ -3358,7 +3358,7 @@ button,
 }
 
 .feature-card__quantity {
-  background-image: linear-gradient(142.51deg, #D10A42 0%, #0041CA 87.33%);
+  background-image: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -3522,8 +3522,8 @@ button,
           flex-direction: column;
   color: #1c3374;
   border: 7px solid;
-  -o-border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
-     border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  -o-border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+     border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 1;
 }
 @media (max-width: 1199px) {
@@ -3803,16 +3803,16 @@ button,
 }
 .faq__tabs-control:not(:disabled):active {
   color: #ffffff;
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-  -o-border-image: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-     border-image: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  -o-border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+     border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   border-image-slice: 1;
 }
 .faq__tabs-control:not(:disabled).is-active {
   color: #ffffff;
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-  -o-border-image: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-     border-image: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  -o-border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+     border-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   border-image-slice: 1;
 }
 @media (max-width: 1199px) {
@@ -4670,23 +4670,23 @@ button,
 @media (hover: hover) {
   .btn--secondary:hover {
     color: #ffffff;
-    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-    border-image-source: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    border-image-source: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     border-image-slice: 1;
     outline: none;
   }
 }
 .btn--secondary:focus {
   color: #ffffff;
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-  border-image-source: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  border-image-source: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   border-image-slice: 1;
   outline: none;
 }
 .btn--secondary:active {
   color: rgba(255, 255, 255, 0.5);
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-  border-image-source: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  border-image-source: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   border-image-slice: 1;
 }
 .btn:disabled, .btn--disabled {
