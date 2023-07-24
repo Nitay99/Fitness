@@ -1,0 +1,152 @@
+.accordion {
+  border-bottom: 1px solid transparentize($color-resolution-blue, 0.8);
+}
+
+.accordion__element {
+  padding-top: 25px;
+  padding-right: 0;
+  padding-bottom: 17px;
+  padding-left: 0;
+
+  border-top: 1px solid transparentize($color-resolution-blue, 0.8);
+
+  &.is-active {
+    & .accordion__circle-icon {
+      background-color: $color-resolution-blue;
+
+      &::before {
+        background-color: $color-default-white;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  @include vp-767 {
+    padding-top: 14px;
+    padding-bottom: 9px;
+  }
+}
+
+.accordion__button {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  padding-top: 7px;
+  padding-right: 50px;
+  padding-bottom: 7px;
+  padding-left: 0;
+  margin-bottom: 9px;
+
+  cursor: pointer;
+  letter-spacing: 0.1px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+  background-color: $color-transparent;
+
+  &:disabled {
+    cursor: default;
+
+    & .accordion__circle-icon {
+      opacity: 0.5;
+    }
+  }
+
+  &:not(:disabled) {
+    @include hover-focus {
+      & .accordion__circle-icon {
+        background-color: $color-resolution-blue;
+
+        &::before,
+        &::after {
+          background-color: $color-default-white;
+        }
+      }
+    }
+  }
+
+  @include vp-767 {
+    margin-bottom: 6px;
+    padding-right: 40px;
+
+    letter-spacing: 0;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+.accordion__circle-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 42px;
+  height: 42px;
+
+  background-color: $color-transparent;
+  border-radius: 50%;
+  border: 1px solid $color-resolution-blue;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 18px;
+    top: 20px;
+    left: 12px;
+
+    background-color: $color-resolution-blue;
+
+    @include vp-767 {
+      width: 12px;
+      top: 15px;
+      left: 9px;
+    }
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+
+  @include vp-767 {
+    top: calc(50% - 16px);
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.accordion__content {
+  padding-right: 200px;
+  margin-bottom: 0;
+
+  @include vp-1199 {
+    padding-right: 150px;
+  }
+
+  @include vp-767 {
+    padding-right: 0;
+  }
+}
+
+.accordion__text {
+  margin-top: 0;
+  margin-bottom: 8px;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+
+  @include vp-767 {
+    margin-bottom: 12px;
+
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

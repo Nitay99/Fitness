@@ -1,0 +1,129 @@
+.faq {
+  padding-top: 120px;
+  padding-bottom: 114px;
+
+  background-color: $color-ghost-white;
+
+  @include vp-1199 {
+    padding-top: 102px;
+    padding-bottom: 80px;
+  }
+
+  @include vp-767 {
+    padding-top: 71px;
+    padding-bottom: 66px;
+  }
+}
+
+.faq__title {
+  margin-top: 0;
+  margin-bottom: 39px;
+
+  font-size: 54px;
+  line-height: 64px;
+  letter-spacing: 1.3px;
+
+  @include vp-1199 {
+    text-align: center;
+    margin-bottom: 41px;
+
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 30px;
+
+    letter-spacing: 0.9px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.faq__tabs {
+  display: flex;
+
+  font-family: $ff-roboto-condensed;
+
+  @include vp-1199 {
+    flex-direction: column;
+  }
+}
+
+.faq__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 40px;
+
+  @include vp-1199 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-right: 0;
+    margin-bottom: 39px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 29px;
+  }
+}
+
+.faq__tabs-control {
+  padding-top: 17px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  width: 260px;
+
+  color: $color-default-dark;
+  font-size: 18px;
+  line-height: 18px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparentize($color-default-dark, 0.8);
+  background-color: $color-transparent;
+
+  &:disabled {
+    cursor: default;
+  }
+
+  &:not(:disabled) {
+    @include hover-focus {
+      outline: none;
+      border-color: $color-default-dark;
+    }
+
+    @include active {
+      color: $color-default-white;
+      background: $color-gradient-button;
+      border-image: $color-gradient-button;
+      border-image-slice: 1;
+    }
+
+    &.is-active {
+      color: $color-default-white;
+      background: $color-gradient-button;
+      border-image: $color-gradient-button;
+      border-image-slice: 1;
+    }
+  }
+
+  @include vp-1199 {
+    width: auto;
+  }
+
+  @include vp-767 {
+    padding-top: 13px;
+    padding-bottom: 13px;
+
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.faq__content {
+  width: 100%;
+}

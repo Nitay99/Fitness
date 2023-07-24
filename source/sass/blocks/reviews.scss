@@ -1,3 +1,158 @@
 .reviews {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @include vp-1199 {
+    padding-top: 91px;
+    padding-bottom: 99px;
+  }
+
+  @include vp-767 {
+    padding-top: 64px;
+    padding-bottom: 69px;
+  }
+}
+
+.reviews__container {
   position: relative;
+  margin: 0 auto;
+  width: 711px;
+
+  @include vp-1199 {
+    width: 100%;
+    padding-right: 56px;
+    padding-left: 56px;
+  }
+
+  @include vp-767 {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+
+.reviews__title {
+  margin-top: 0;
+  margin-bottom: 37px;
+  text-align: center;
+
+  letter-spacing: 1px;
+  font-size: 54px;
+  line-height: 64px;
+
+  @include vp-1199 {
+    margin-bottom: 40px;
+
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 42px;
+
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.reviews__slider {
+  width: 560px;
+
+  @include vp-1199 {
+    width: 100%;
+  }
+}
+
+.reviews__slider-button-prev,
+.reviews__slider-button-next {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  width: 56px;
+  height: 56px;
+  top: 94px;
+
+  cursor: pointer;
+  color: $color-default-dark;
+  border-radius: 50%;
+
+  background-color: $color-transparent;
+
+  &::after {
+    font-size: 0;
+  }
+
+  &:not(.reviews__slider-button-disabled) {
+    @include hover-focus {
+      border: 1px solid $color-default-dark;
+    }
+
+    @include active {
+      border: 1px solid $color-default-dark;
+      background-color: $color-default-dark;
+      color: $color-default-white;
+    }
+  }
+
+  @include vp-1199 {
+    top: auto;
+    bottom: 93px;
+  }
+
+  @include vp-767 {
+    width: 40px;
+    height: 40px;
+    bottom: auto;
+    top: 44%;
+  }
+}
+
+.reviews__slider-button-prev {
+  left: 0;
+
+  @include vp-1199 {
+    left: -13px;
+  }
+
+  @include vp-767 {
+    left: -13px;
+  }
+}
+
+.reviews__slider-button-next {
+  right: 0;
+
+  @include vp-1199 {
+    right: -19px;
+  }
+
+  @include vp-767 {
+    right: -13px;
+  }
+}
+
+.reviews__slider-button-disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.reviews__slider-button-prev svg,
+.reviews__slider-button-next svg {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+
+  @include vp-767 {
+    width: 10px;
+    height: 19px;
+  }
+}
+
+.reviews__slider-button-prev svg {
+  margin-right: 3px;
+}
+
+.reviews__slider-button-next svg {
+  margin-left: 3px;
 }

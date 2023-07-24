@@ -3,6 +3,7 @@
 
 @import "vendor/normalize";
 @import "vendor/data-tabs";
+@import "vendor/data-accordion";
 // Swiper 7.4.1
 @import "vendor/swiper";
 
@@ -32,14 +33,15 @@
 @import "blocks/date";
 @import "blocks/coaches";
 @import "blocks/coach";
-@import "blocks/slider";
 @import "blocks/achievements-list";
 @import "blocks/features";
 @import "blocks/feature-card";
 @import "blocks/stocks";
 @import "blocks/mega-offer";
 @import "blocks/faq";
+@import "blocks/accordion";
 @import "blocks/reviews";
+@import "blocks/review";
 @import "blocks/feedback";
 @import "blocks/order";
 @import "blocks/contacts";

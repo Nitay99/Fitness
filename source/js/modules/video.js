@@ -1,7 +1,7 @@
 const video = document.querySelector('.video');
 const buttonPlay = document.querySelector('.video__button');
 
-function createFrame() {
+const createFrame = () => {
   let fr = document.createElement('iframe');
   fr.src = 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1';
   fr.setAttribute('frameborder', '0');
@@ -9,7 +9,7 @@ function createFrame() {
   fr.setAttribute('height', '100%');
   video.innerHTML = '';
   video.appendChild(fr);
-}
+};
 
 const setPlayClickHandler = () => {
   buttonPlay.addEventListener('click', createFrame);

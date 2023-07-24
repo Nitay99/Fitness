@@ -34,7 +34,7 @@
   }
 
   @include vp-767 {
-    padding: 49px 43px 51px;
+    padding: 45px 43px 51px;
   }
 }
 
@@ -70,6 +70,8 @@
 
   @include vp-767 {
     margin-right: 30px;
+
+    line-height: 48px;
   }
 }
 
@@ -94,6 +96,10 @@
     font-size: 12px;
     line-height: 18px;
   }
+
+  @include vp-767 {
+    margin-bottom: 29px;
+  }
 }
 
 .games__img-wrap {
@@ -101,11 +107,13 @@
 
   @include vp-1199 {
     width: 386px;
-    height: 292px;
   }
 
   @include vp-767 {
     width: 100%;
-    height: auto;
   }
+}
+
+.games__img-wrap img {
+  object-fit: cover;
 }

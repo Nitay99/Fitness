@@ -26,29 +26,17 @@
 
 @mixin hover-focus {
   @media (hover: hover) {
-    &:hover:not(.focus-visible) {
+    &:hover {
       @content;
     }
   }
 
-  &.focus-visible:focus {
+  &:focus {
     @content;
   }
 }
 
 // Desktop first
-
-@mixin vp-1919 {
-  @media (max-width: ($vp-1920 - 1px)) {
-    @content;
-  }
-}
-
-@mixin vp-1329 {
-  @media (max-width: ($vp-1330 - 1px)) {
-    @content;
-  }
-}
 
 @mixin vp-1199 {
   @media (max-width: ($vp-1200 - 1px)) {
@@ -64,6 +52,12 @@
 
 @mixin vp-374 {
   @media (max-width: ($vp-375 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-320 {
+  @media (max-width: $vp-320) {
     @content;
   }
 }

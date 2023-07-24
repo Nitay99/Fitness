@@ -1,93 +1,38 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {setPlayClickHandler} from './modules/video';
+import {setBuySectionButtonHandler} from './modules/scroll-to-buy';
 import './modules/price';
+import {initCoachesSlider} from './modules/coaches';
+import {initReviewsSlider} from './modules/reviews';
 import {initTabs} from './vendor/init-tabs';
-import Swiper, {Navigation} from './vendor/swiper';
-import {setBuyButtonHandler} from './utils/scroll-to-buy';
+import {initAccordions} from './vendor/init-accordion';
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
   // Vendor
   // ---------------------------------
-  Swiper.use([Navigation]);
-  const swiper = new Swiper('.slider', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: false,
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
-    slidesPerView: 1,
-    spaceBetween: 10,
-    // Responsive breakpoints
-    breakpoints: {
-      // when window width is >= 320px
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 40,
-      },
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 40,
-      },
-    },
-  });
 
   initTabs();
+  initAccordions();
 
   // Utils
   // ---------------------------------
 
   iosVhFix();
   setPlayClickHandler();
-  setBuyButtonHandler();
+  setBuySectionButtonHandler();
 
   // Modules
   // ---------------------------------
 
+  initCoachesSlider();
+  initReviewsSlider();
+
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    const swiper = new Swiper('.reviews__slider', {
-      // Optional parameters
-      direction: 'horizontal',
-      loop: false,
-
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-
-      slidesPerView: 1,
-      spaceBetween: 10,
-      // Responsive breakpoints
-      breakpoints: {
-        // when window width is >= 320px
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 1,
-          spaceBetween: 40,
-        },
-        1200: {
-          slidesPerView: 1,
-          spaceBetween: 40,
-        },
-      },
-    });
     const form = new Form();
     window.form = form;
     form.init();

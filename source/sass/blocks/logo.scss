@@ -5,11 +5,11 @@
 
 .logo img {
   @include vp-1199 {
-    width: 82px;
-    height: 17px;
+    width: 80px;
+    height: 21px;
   }
 
   @include vp-767 {
-    width: 69px;
+    width: 67px;
   }
 }

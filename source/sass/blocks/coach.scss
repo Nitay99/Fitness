@@ -1,7 +1,24 @@
 .coach {
   position: relative;
+  display: block;
+  width: 260px;
+  margin-left: 20px;
 
   cursor: pointer;
+
+  @include vp-1199 {
+    width: 268px;
+    margin-left: 17px;
+  }
+
+  @include vp-767 {
+    width: 226px;
+    margin-left: 11px;
+  }
+
+  @include vp-320 {
+    margin-left: 1px;
+  }
 }
 
 .coach__info {
@@ -23,12 +40,28 @@
   @include hover-focus {
     justify-content: flex-start;
 
-    background-color: transparentize($color-default-dark, 0.2);
     outline: none;
+    background-color: transparentize($color-default-dark, 0.2);
 
     & .coach__achievements {
       display: block;
     }
+  }
+
+  @include vp-767 {
+    padding-top: 43px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.coach img {
+  width: 100%;
+  height: 294px;
+  object-fit: cover;
+
+  @include vp-767 {
+    height: 274px;
   }
 }
 
