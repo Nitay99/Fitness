@@ -3540,13 +3540,13 @@ button,
   }
 }
 
-.stocks__offer-title {
+.stocks__offer h3 {
   margin-top: 0;
   margin-bottom: 11px;
   font-size: 26px;
 }
 
-.stocks__desc {
+.stocks__offer p {
   margin-top: 0;
   line-height: 22px;
 }
@@ -3625,7 +3625,7 @@ button,
   }
 }
 
-.mega-offer__title {
+.mega-offer h3 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 28px;
@@ -3644,12 +3644,12 @@ button,
   }
 }
 
-.mega-offer__text {
+.mega-offer p {
   margin-top: 0;
   letter-spacing: 1px;
 }
 @media (max-width: 767px) {
-  .mega-offer__text {
+  .mega-offer p {
     margin-bottom: 28px;
   }
 }
@@ -4223,27 +4223,27 @@ button,
   }
 }
 
-.review__title {
+.review h3 {
   margin-top: 0;
   margin-bottom: 11px;
   font-size: 20px;
   line-height: 30px;
 }
 @media (max-width: 767px) {
-  .review__title {
+  .review h3 {
     padding-left: 99px;
     margin-bottom: 22px;
     line-height: 26px;
   }
 }
 
-.review__text {
+.review p {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 23px;
 }
 @media (max-width: 767px) {
-  .review__text {
+  .review p {
     line-height: 22.4px;
     text-align: center;
   }
