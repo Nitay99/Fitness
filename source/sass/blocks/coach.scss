@@ -2,7 +2,9 @@
   position: relative;
   display: block;
   width: 100%;
+  background-color: $color-spindle;
 
+  user-select: none;
   cursor: pointer;
 }
 

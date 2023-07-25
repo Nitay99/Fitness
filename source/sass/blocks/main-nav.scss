@@ -9,6 +9,7 @@
 
     @include vp-767 {
       justify-content: flex-start;
+      align-items: flex-start;
       column-gap: 66px;
     }
   }

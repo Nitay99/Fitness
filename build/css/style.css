@@ -1722,6 +1722,13 @@ button,
   display: -ms-flexbox;
   display: flex;
 }
+@media (max-width: 767px) {
+  .main-footer__list-wrap {
+    -webkit-column-gap: 66px;
+       -moz-column-gap: 66px;
+            column-gap: 66px;
+  }
+}
 
 .main-footer__list {
   margin-left: 20px;
@@ -1791,6 +1798,9 @@ button,
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-column-gap: 66px;
        -moz-column-gap: 66px;
             column-gap: 66px;
@@ -1949,9 +1959,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 11px;
@@ -2371,6 +2378,10 @@ button,
   background-color: rgba(255, 255, 255, 0);
   border: none;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   padding-right: 0;
   padding-bottom: 11px;
   padding-left: 0;
@@ -2653,7 +2664,7 @@ button,
 }
 @media (max-width: 767px) {
   .games__col {
-    padding: 45px 43px 51px;
+    padding: 45px 43px 49px;
   }
 }
 
@@ -2803,7 +2814,7 @@ button,
 @media (max-width: 1199px) {
   .coaches {
     padding-top: 45px;
-    padding-bottom: 91px;
+    padding-bottom: 99px;
   }
 }
 @media (max-width: 767px) {
@@ -2981,6 +2992,11 @@ button,
   position: relative;
   display: block;
   width: 100%;
+  background-color: #b6bdcc;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   cursor: pointer;
 }
 
@@ -3789,6 +3805,10 @@ button,
   padding-bottom: 17px;
   padding-left: 20px;
   width: 260px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   color: #102654;
   font-size: 18px;
   line-height: 18px;
@@ -3879,6 +3899,10 @@ button,
   padding-bottom: 7px;
   padding-left: 0;
   margin-bottom: 9px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   cursor: pointer;
   letter-spacing: 0.1px;
   font-weight: 500;
@@ -3996,13 +4020,13 @@ button,
 @media (max-width: 1199px) {
   .reviews {
     padding-top: 91px;
-    padding-bottom: 99px;
+    padding-bottom: 101px;
   }
 }
 @media (max-width: 767px) {
   .reviews {
     padding-top: 64px;
-    padding-bottom: 69px;
+    padding-bottom: 71px;
   }
 }
 
@@ -4346,6 +4370,11 @@ button,
 }
 @media (max-width: 1199px) {
   .order form {
+    row-gap: 29px;
+  }
+}
+@media (max-width: 767px) {
+  .order form {
     row-gap: 34px;
   }
 }
@@ -4504,9 +4533,12 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-column-gap: 59px;
      -moz-column-gap: 59px;
           column-gap: 59px;
+  row-gap: 30px;
   padding-left: 4px;
 }
 @media (max-width: 1199px) {
@@ -4522,6 +4554,7 @@ button,
 }
 @media (max-width: 767px) {
   .contacts__container {
+    row-gap: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -4583,6 +4616,20 @@ button,
     font-size: 18px;
     line-height: 27px;
   }
+}
+
+.contacts__desc a {
+  color: #102654;
+}
+@media (hover: hover) {
+  .contacts__desc a:hover {
+    outline: none;
+    border-bottom: 1px solid;
+  }
+}
+.contacts__desc a:focus {
+  outline: none;
+  border-bottom: 1px solid;
 }
 
 .btn {
