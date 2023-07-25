@@ -1,11 +1,11 @@
+// eslint-disable-next-line
 import Swiper, {Navigation} from '../vendor/swiper';
 
 const infoCoaches = document.querySelectorAll('.coach__info');
 
 const initCoachesSlider = () => {
-  // createSlider('.coaches__slider', true, 4, 2, 1);
-
   Swiper.use([Navigation]);
+  // eslint-disable-next-line
   const swiper = new Swiper('.coaches__slider', {
     // Optional parameters
     direction: 'horizontal',
@@ -22,24 +22,26 @@ const initCoachesSlider = () => {
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
-        spaceBetween: 0,
+        spaceBetween: 5,
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 0,
+        spaceBetween: 30,
       },
       1200: {
         slidesPerView: 4,
-        spaceBetween: 0,
+        spaceBetween: 40,
       },
     },
   });
 };
 
-for (let infoCoach of infoCoaches) {
-  infoCoach.addEventListener('click', (evt) => {
-    evt.preventDefault();
-    infoCoach.focus();
+if (infoCoaches.length >= 1) {
+  infoCoaches.forEach((infoCoach) => {
+    infoCoach.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      infoCoach.focus();
+    });
   });
 }
 

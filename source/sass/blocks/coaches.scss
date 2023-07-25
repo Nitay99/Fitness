@@ -5,7 +5,7 @@
 
   @include vp-1199 {
     padding-top: 45px;
-    padding-bottom: 101px;
+    padding-bottom: 91px;
   }
 
   @include vp-767 {
@@ -15,17 +15,12 @@
 }
 
 .coaches__container {
-  width: 1366px;
   margin: 0 auto;
   position: relative;
 
   @include vp-1199 {
     width: 100%;
     padding: 0 45px;
-  }
-
-  @include vp-767 {
-    // padding: 0 15px;
   }
 }
 
@@ -56,14 +51,14 @@
 }
 
 .coaches__slider {
-  width: 1200px;
+  width: 85%;
 
   @include vp-1199 {
-    width: 604px;
+    width: 83.5%;
   }
 
   @include vp-767 {
-    width: 250px;
+    width: 98%;
   }
 }
 
@@ -71,7 +66,7 @@
 .coaches__slider-button-next {
   width: 56px;
   height: 56px;
-  top: 254px;
+  top: 62.5%;
 
   color: $color-default-dark;
   border-radius: 50%;
@@ -93,11 +88,13 @@
   }
 
   @include vp-1199 {
-    top: 222px;
+    top: 58%;
   }
 
   @include vp-767 {
-    top: 213px;
+    width: 40px;
+    height: 40px;
+    top: 62%;
   }
 }
 
@@ -109,7 +106,7 @@
   }
 
   @include vp-767 {
-    left: -5px;
+    left: 2px;
   }
 }
 
@@ -121,7 +118,15 @@
   }
 
   @include vp-767 {
-    right: -5px;
+    right: 2px;
+  }
+}
+
+.coaches__slider-button-prev svg,
+.coaches__slider-button-next svg {
+  @include vp-767 {
+    width: 10px;
+    height: 19px;
   }
 }
 
@@ -149,10 +154,3 @@
 
   list-style-type: none;
 }
-
-// .coaches__item:nth-child(1),
-// .coaches__item:nth-child(2) {
-//   @include vp-1199 {
-//     display: none;
-//   }
-// }

@@ -1,9 +1,8 @@
 import Swiper, {Navigation} from '../vendor/swiper';
 
 const initReviewsSlider = () => {
-  // createSlider('.reviews__slider', false, 1, 1, 1);
-
   Swiper.use([Navigation]);
+  // eslint-disable-next-line
   const swiper = new Swiper('.reviews__slider', {
     // Optional parameters
     direction: 'horizontal',
