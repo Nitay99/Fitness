@@ -3481,6 +3481,7 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  row-gap: 30px;
 }
 @media (max-width: 1199px) {
   .stocks__col {
@@ -4377,7 +4378,7 @@ button,
   color: #ffffff;
   border-bottom-width: 1px;
   border-style: solid;
-  border-color: #74819C;
+  border-color: #74819c;
   border-top: 0;
   border-right: 0;
   border-left: 0;
@@ -4528,7 +4529,7 @@ button,
 
 .contacts__list:nth-child(2n-1) {
   padding-right: 61px;
-  border-right: 1px solid #74819C;
+  border-right: 1px solid #74819c;
 }
 @media (max-width: 1199px) {
   .contacts__list:nth-child(2n-1) {
