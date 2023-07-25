@@ -3555,7 +3555,7 @@ button,
   margin-top: auto;
 }
 
-.stocks__link {
+.stocks a {
   position: relative;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -3565,22 +3565,22 @@ button,
   line-height: 14px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
-  color: #1c3374;
+  color: inherit;
 }
-.stocks__link--disabled {
+.stocks a--disabled {
   cursor: default;
   opacity: 0.5;
 }
 @media (hover: hover) {
-  .stocks__link:hover:not(.focus-visible):not(.stocks__link--disabled) {
+  .stocks a:hover:not(.focus-visible):not(.stocks__link--disabled) {
     opacity: 0.7;
   }
 }
-.stocks__link.focus-visible:focus:not(.stocks__link--disabled) {
+.stocks a.focus-visible:focus:not(.stocks__link--disabled) {
   outline: none;
   border-color: rgba(255, 255, 255, 0);
 }
-.stocks__link.focus-visible:focus:not(.stocks__link--disabled)::after {
+.stocks a.focus-visible:focus:not(.stocks__link--disabled)::after {
   content: "";
   position: absolute;
   width: calc(100% + 20px);
@@ -3654,7 +3654,7 @@ button,
   }
 }
 
-.mega-offer__link {
+.mega-offer a {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 16px;

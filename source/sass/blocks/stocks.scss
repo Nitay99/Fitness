@@ -117,7 +117,7 @@
   margin-top: auto;
 }
 
-.stocks__link {
+.stocks a {
   position: relative;
   display: inline-flex;
 
@@ -126,7 +126,7 @@
   line-height: 14px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
-  color: $color-resolution-blue;
+  color: inherit;
 
   &--disabled {
     cursor: default;
