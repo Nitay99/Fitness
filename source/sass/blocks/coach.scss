@@ -49,7 +49,12 @@
     min-width: 268px;
   }
 
+  @include only-768 {
+    height: 294px;
+  }
+
   @include vp-767 {
+    height: auto;
     min-width: 226px;
     min-height: 274px;
   }

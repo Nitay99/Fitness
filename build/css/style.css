@@ -3048,8 +3048,14 @@ button,
     min-width: 268px;
   }
 }
+@media (width: 768px) {
+  .coach img {
+    height: 294px;
+  }
+}
 @media (max-width: 767px) {
   .coach img {
+    height: auto;
     min-width: 226px;
     min-height: 274px;
   }
