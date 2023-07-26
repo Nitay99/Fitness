@@ -1787,10 +1787,12 @@ button,
 @media (max-width: 1199px) {
   .main-footer__logo {
     padding-top: 0;
+    margin-right: 5px;
   }
 }
 @media (max-width: 767px) {
   .main-footer__logo {
+    margin-right: 0;
     position: relative;
     top: 23px;
     left: 0;
