@@ -37,8 +37,9 @@
   }
 
   @include vp-767 {
-    margin-bottom: 36px;
+    margin-bottom: 35px;
 
+    letter-spacing: 0.6px;
     font-size: 32px;
     line-height: 38px;
   }

@@ -39,18 +39,20 @@
     }
 
     @include vp-1199 {
-      width: 183px;
+      width: 187px;
       padding-top: 19px;
-      padding-right: 30px;
+      padding-right: 26px;
       padding-bottom: 19px;
-      padding-left: 30px;
+      padding-left: 26px;
+
+      letter-spacing: 0.6px;
     }
 
     @include vp-767 {
       width: 100%;
-      padding-top: 20px;
+      padding-top: 21px;
       padding-right: 30px;
-      padding-bottom: 20px;
+      padding-bottom: 21px;
       padding-left: 30px;
     }
   }
@@ -95,6 +97,10 @@
       background: $color-gradient-button;
       border-image-source: $color-gradient-button;
       border-image-slice: 1;
+    }
+
+    @include vp-767 {
+      letter-spacing: 0.6px;
     }
   }
 

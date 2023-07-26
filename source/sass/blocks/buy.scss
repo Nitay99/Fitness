@@ -46,7 +46,7 @@
   flex-wrap: wrap;
   column-gap: 47.5px;
   row-gap: 10px;
-  max-width: 362px;
+  max-width: 100%;
   margin-top: 0;
   margin-right: auto;
   margin-bottom: 38px;
@@ -61,7 +61,6 @@
 
   @include vp-767 {
     column-gap: 42px;
-    max-width: 298px;
     margin-bottom: 34px;
   }
 
@@ -112,18 +111,6 @@
     cursor: default;
   }
 
-  // &:not(:last-child) {
-  //   margin-right: 45px;
-
-  //   @include vp-1199 {
-  //     margin-right: 52px;
-  //   }
-
-  //   @include vp-767 {
-  //     margin-right: 35px;
-  //   }
-  // }
-
   @include vp-1199 {
     font-size: 18px;
     line-height: 27px;
@@ -131,12 +118,12 @@
 
   @include vp-767 {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 22px;
 
     text-align: left;
     min-width: 60px;
     padding-right: 0;
-    padding-bottom: 12px;
+    padding-bottom: 14px;
   }
 }
 

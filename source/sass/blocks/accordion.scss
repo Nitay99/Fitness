@@ -12,10 +12,10 @@
 
   &.is-active {
     & .accordion__button {
-      background-color: $color-resolution-blue;
+      background-color: $color-default-white;
 
       &::before {
-        background-color: $color-default-white;
+        background-color: $color-resolution-blue;
       }
 
       &::after {
@@ -79,12 +79,33 @@
   }
 
   &:not(:disabled) {
-    @include hover-focus {
+    @include hover {
       background-color: $color-resolution-blue;
 
       &::before,
       &::after {
         background-color: $color-default-white;
+      }
+    }
+
+    @include focus {
+      background-color: $color-resolution-blue;
+
+      &::before,
+      &::after {
+        background-color: $color-default-white;
+      }
+    }
+
+    @include active {
+      background-color: $color-resolution-blue;
+
+      &::before {
+        background-color: $color-default-white;
+      }
+
+      &::after {
+        display: none;
       }
     }
   }
