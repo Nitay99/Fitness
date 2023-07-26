@@ -1708,7 +1708,10 @@ button,
 }
 @media (max-width: 1199px) {
   .main-footer {
-    padding: 43px 0 46px;
+    padding-top: 41px;
+    padding-right: 0;
+    padding-bottom: 46px;
+    padding-left: 0;
   }
 }
 @media (max-width: 767px) {
@@ -3812,7 +3815,7 @@ button,
 @media (max-width: 1199px) {
   .faq {
     padding-top: 100px;
-    padding-bottom: 97px;
+    padding-bottom: 100px;
   }
 }
 @media (max-width: 767px) {
@@ -4104,6 +4107,11 @@ button,
   font-size: 18px;
   line-height: 25px;
 }
+@media (max-width: 1199px) {
+  .accordion__text {
+    margin-top: 6px;
+  }
+}
 @media (max-width: 767px) {
   .accordion__text {
     margin-top: 14px;
@@ -4314,6 +4322,7 @@ button,
 @media (max-width: 1199px) {
   .review {
     padding-right: 65px;
+    padding-bottom: 57px;
     padding-left: 65px;
   }
 }
@@ -4375,9 +4384,13 @@ button,
   margin-bottom: 0;
   line-height: 23px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .review p {
     line-height: 22.4px;
+  }
+}
+@media (max-width: 767px) {
+  .review p {
     text-align: center;
   }
 }
@@ -4631,9 +4644,9 @@ button,
 }
 @media (max-width: 1199px) {
   .contacts {
-    padding-top: 62px;
+    padding-top: 63px;
     padding-right: 131px;
-    padding-bottom: 61px;
+    padding-bottom: 63px;
     padding-left: 133px;
     max-width: 100%;
   }
@@ -4642,7 +4655,7 @@ button,
   .contacts {
     padding-top: 63px;
     padding-right: 15px;
-    padding-bottom: 42px;
+    padding-bottom: 43px;
     padding-left: 15px;
   }
 }
@@ -4728,7 +4741,7 @@ button,
 
 @media (max-width: 767px) {
   .contacts__item {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
 }
 
@@ -4742,7 +4755,7 @@ button,
 }
 @media (max-width: 1199px) {
   .contacts__name {
-    margin-bottom: 7px;
+    margin-bottom: 6px;
     font-size: 20px;
     line-height: 30px;
   }
