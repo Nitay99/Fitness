@@ -15,8 +15,9 @@
 }
 
 .coaches__container {
-  margin: 0 auto;
   position: relative;
+  margin: 0 auto;
+  max-width: 1366px;
 
   @include vp-1199 {
     width: 100%;
@@ -27,7 +28,7 @@
 .coaches__title {
   margin-top: 0;
   margin-bottom: 48px;
-  margin-left: 105px;
+  margin-left: 7.6%;
 
   letter-spacing: 1px;
   font-size: 54px;

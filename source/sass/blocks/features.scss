@@ -60,7 +60,7 @@
 .features__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  column-gap: 360px;
 
   list-style-type: none;
   padding-left: 0;

@@ -3,12 +3,14 @@
   padding-right: 70px;
   padding-bottom: 46px;
   padding-left: 120px;
+  max-width: 683px;
 
   @include vp-1199 {
     padding-top: 62px;
     padding-right: 131px;
     padding-bottom: 61px;
     padding-left: 133px;
+    max-width: 100%;
   }
 
   @include vp-767 {

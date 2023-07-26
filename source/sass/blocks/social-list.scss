@@ -20,8 +20,16 @@
   width: 25px;
   height: 25px;
 
-  @include hover-focus {
+  @include hover {
     &:not(.social-list__link--disabled) {
+      background-color: $color-egyptian-blue;
+      color: $color-default-white;
+    }
+  }
+
+  @include focus {
+    &:not(.social-list__link--disabled) {
+      outline: none;
       background-color: $color-egyptian-blue;
       color: $color-default-white;
     }

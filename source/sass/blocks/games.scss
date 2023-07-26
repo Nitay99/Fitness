@@ -26,15 +26,18 @@
 
 .games__col {
   padding: 82px 79px 80px;
+  max-width: 600px;
 
   background-color: $color-torch-red;
 
   @include vp-1199 {
     padding: 52px 48px 35px 44px;
+    max-width: 310px;
   }
 
   @include vp-767 {
     padding: 50px 43px 49px;
+    max-width: 100%;
   }
 }
 
@@ -120,4 +123,5 @@
 
 .games__img-wrap img {
   object-fit: cover;
+  height: 100%;
 }

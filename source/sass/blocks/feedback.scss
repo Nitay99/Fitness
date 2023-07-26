@@ -8,8 +8,22 @@
 
 .feedback__col {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &--order {
+    align-items: flex-end;
+
+    background-color: $color-default-dark;
+
+    @include vp-1199 {
+      display: block;
+    }
+  }
 
   @include vp-1199 {
     width: 100%;
+    display: block;
   }
 }

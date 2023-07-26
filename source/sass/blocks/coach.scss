@@ -5,7 +5,6 @@
   background-color: $color-spindle;
 
   user-select: none;
-  cursor: pointer;
 }
 
 .coach__info {
@@ -21,6 +20,7 @@
   padding-bottom: 20px;
   padding-left: 20px;
 
+  overflow: auto;
   color: $color-default-white;
   font-family: $ff-roboto-condensed;
 

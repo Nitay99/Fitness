@@ -3,15 +3,15 @@
 }
 
 .accordion__element {
-  padding-top: 24px;
+  padding-top: 25px;
   padding-right: 0;
-  padding-bottom: 17px;
+  padding-bottom: 25px;
   padding-left: 0;
 
   border-top: 1px solid transparentize($color-resolution-blue, 0.8);
 
   &.is-active {
-    & .accordion__circle-icon {
+    & .accordion__button {
       background-color: $color-resolution-blue;
 
       &::before {
@@ -25,22 +25,21 @@
   }
 
   @include vp-767 {
-    padding-top: 18px;
-    padding-bottom: 8px;
+    padding-top: 22px;
+    padding-bottom: 20px;
   }
 }
 
-.accordion__button {
+.accordion__heading {
   position: relative;
   width: 100%;
+  display: flex;
+  align-items: center;
   min-height: 42px;
   text-align: left;
   padding-right: 50px;
   padding-left: 0;
-  margin-bottom: 9px;
 
-  user-select: none;
-  cursor: pointer;
   letter-spacing: 0.1px;
   font-weight: 500;
   font-size: 24px;
@@ -49,31 +48,10 @@
   border-right: 0;
   border-bottom: 0;
   border-left: 0;
+  color: $color-default-dark;
   background-color: $color-transparent;
 
-  &:disabled {
-    cursor: default;
-
-    & .accordion__circle-icon {
-      opacity: 0.5;
-    }
-  }
-
-  &:not(:disabled) {
-    @include hover-focus {
-      & .accordion__circle-icon {
-        background-color: $color-resolution-blue;
-
-        &::before,
-        &::after {
-          background-color: $color-default-white;
-        }
-      }
-    }
-  }
-
   @include vp-767 {
-    margin-bottom: 14px;
     padding-right: 40px;
 
     letter-spacing: 0;
@@ -82,16 +60,34 @@
   }
 }
 
-.accordion__circle-icon {
+.accordion__button {
   position: absolute;
   top: 0;
   right: 0;
   width: 42px;
   height: 42px;
 
+  cursor: pointer;
   background-color: $color-transparent;
   border-radius: 50%;
   border: 1px solid $color-resolution-blue;
+
+  &:disabled {
+    cursor: default;
+
+    opacity: 0.5;
+  }
+
+  &:not(:disabled) {
+    @include hover-focus {
+      background-color: $color-resolution-blue;
+
+      &::before,
+      &::after {
+        background-color: $color-default-white;
+      }
+    }
+  }
 
   &::before,
   &::after {
@@ -136,15 +132,16 @@
 }
 
 .accordion__text {
-  margin-top: 0;
-  margin-bottom: 7px;
+  margin-top: 9px;
+  margin-bottom: 0;
 
   font-weight: 300;
   font-size: 18px;
   line-height: 25px;
 
   @include vp-767 {
-    margin-bottom: 12px;
+    margin-top: 14px;
+    margin-bottom: 0;
 
     font-size: 16px;
     line-height: 22px;
